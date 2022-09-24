@@ -4,18 +4,26 @@
 }
 
 /*login*/
-.divLogin{
-    margin: auto;
-    margin-top: 250px;
-    width: 300px;
+#caixaLogin{
+    position: relative;
     border: solid 3px rgb(0, 70, 70);
     border-left: solid 10px rgb(0, 70, 70);
     border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    transform: translateY(200px);
+}
+#caixaLogin div{
+    display: inline-block;
+}
+.divLogin{
+    width: 300px;
     font-size: 22px;
+    margin-bottom: 5px;
 }
 .divLogin input{
     margin: 5px;
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: none;
     border-bottom: solid 1px rgb(0, 70, 70);

@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="divLogin">
-        <h1>LOGIN</h1>
-        <form action="pages/home.html" method="POST">
-            <p><label for="usuario">Usuário:</label><br>
-            <input type="text" name="usuario" id="usuario" required autocomplete="off"></p>
-
-            <p><label for="senha">Senha:</label><br>
-            <input type="password" name="senha" id="senha" required autocomplete="off"></p>
-
-            <p><input type="submit" value="Entrar"></p>
-        </form>
-        <a href="#">Esqueci minha senha</a>
+    <div id="caixaLogin">
+        <div class="divLogin">
+            <h1>LOGIN</h1>
+            <form action="pages/home.html" method="POST">
+                <p><label for="usuario">Usuário:</label><br>
+                <input type="text" name="usuario" id="usuario" required autocomplete="off"></p>
+                
+                <p><label for="senha">Senha:</label><br>
+                <input type="password" name="senha" id="senha" required autocomplete="off"></p>
+                
+                <p><input type="submit" value="Entrar"></p>
+            </form>
+            <a href="#">Esqueci minha senha</a>
+        </div>
+        <div>
+            <h1>BEM-VINDO</h1>
+            <p>Faça login para acessar o sistema <br> de gerenciamento da Católica EAD</p>
+            <img src="imgs/home/alunosAzul.png" alt="logo" width="180px">
+        </div>
     </div>
 </body>
 </html>
