@@ -2,6 +2,44 @@
     padding: 0;
     margin: 0;
 }
+
+/*login*/
+.divLogin{
+    margin: auto;
+    margin-top: 250px;
+    width: 300px;
+    border: solid 3px rgb(0, 70, 70);
+    border-left: solid 10px rgb(0, 70, 70);
+    border-radius: 10px;
+    font-size: 22px;
+}
+.divLogin input{
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: solid 1px rgb(0, 70, 70);
+    background-color: whitesmoke;
+    outline: none;
+}
+.divLogin input[type=submit]{
+    background-color: rgb(0, 70, 70);
+    border: none;
+    color: white;
+}
+.divLogin input[type=submit]:hover{
+    background-color: rgb(0, 48, 48);
+}
+.divLogin a{
+    color: rgb(0, 70, 70);
+    font-size: 14px;
+}
+.divLogin a:hover{
+    color: rgb(0, 48, 48);
+    font-size: 14px;
+}
+/*login*/
+
 /*navbar*/
 header{
     padding-bottom: 50px;
