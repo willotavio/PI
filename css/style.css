@@ -36,7 +36,8 @@ a:hover{
 /*navbar*/
 /*body*/
 body{
-    color: rgb(0, 70, 70);;
+    background-color: whitesmoke;
+    color: rgb(0, 70, 70);
     text-align: center;
 /*     font-family: Verdana, Geneva, Tahoma, sans-serif; */
 /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -55,6 +56,7 @@ footer{
 /*footer*/
 /*consulta alunos*/
 .cardsHome{
+    background-color: white;
     width: 300px;
     border: solid 3px rgb(0, 70, 70);
     border-bottom: solid 10px rgb(0, 70, 70);;
