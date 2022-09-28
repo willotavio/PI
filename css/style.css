@@ -100,7 +100,7 @@ footer{
     text-align: center;
 }
 /*footer*/
-/*consulta alunos*/
+/*cards home*/
 .cardsHome{
     background-color: white;
     width: 300px;
@@ -111,5 +111,21 @@ footer{
     text-align: center;
     display: inline-block;
     margin-bottom: 10px;
+}
+/*cards home*/
+/*consulta alunos*/
+#listaAlunos{
+    margin: auto;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 18px;
+    padding: 1px;
+    margin-bottom: 20px;
+}
+#listaAlunos td{
+    border: solid 1px black;
+}
+#listaAlunos a{
+    color: rgb(0, 70, 70);
 }
 /*consulta alunos*/
