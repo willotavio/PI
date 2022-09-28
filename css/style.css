@@ -114,6 +114,11 @@ footer{
 }
 /*cards home*/
 /*consulta alunos*/
+#botaoAdd{
+    margin-top: 50px;
+    border: solid 2px rgb(0, 70, 70);
+    border-radius: 10px;
+}
 #listaAlunos{
     margin: auto;
     text-align: center;
