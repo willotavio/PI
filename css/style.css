@@ -4,17 +4,11 @@
 }
 
 /*navbar*/
-header{
-    padding-bottom: 50px;
-}
 .barraNav{
     background-image: linear-gradient(to bottom, #0478D9, #4e9ddd);
     color: white;
     height: 50px;
     font-size: 26px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
     font-size: 16px;
 }
 .barraNav li{
