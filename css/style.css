@@ -7,7 +7,7 @@
 header{
     padding-bottom: 50px;
 }
-nav{
+.barraNav{
     background-image: linear-gradient(to bottom, #0478D9, #4e9ddd);
     color: white;
     height: 50px;
@@ -15,23 +15,19 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 1000;
+    font-size: 16px;
 }
-ul{
-    padding-top: 14px;
-    position: relative;
-    font-size: 18px;
-}
-li{
+.barraNav li{
     display: inline-block;
     list-style: none;
 }
-a{
+.barraNav a{
     text-decoration: none;
     color: white;
     margin: 10px;
     padding: 2px;
 }
-a:hover{
+.barraNav a:hover{
     color: rgba(255, 255, 255, 0.849);
 }
 /*navbar*/
