@@ -62,7 +62,7 @@ footer{
     border-style: none none none solid;
     border-radius: 20px;
     background-color: white;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .inputLogin{
     border-style: none none solid none;
@@ -115,3 +115,12 @@ footer{
     color: rgb(0, 70, 70);
 }
 /*consulta alunos*/
+
+/*polos*/
+#divPolos{min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+/*polos*/
