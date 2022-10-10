@@ -60,6 +60,7 @@ footer{
     border-radius: 20px;
     background-color: white;
     margin-top: 200px;
+    box-shadow: 5px 5px 5px 5px #00000031; 
 }
 #divLogin a{
     text-decoration: none;
