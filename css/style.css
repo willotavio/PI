@@ -54,7 +54,7 @@ footer {
 }
 /*footer*/
 /*login*/
-#divLogin {
+.divLogin {
   border: #0478d9 solid 10px;
   border-style: none none none solid;
   border-radius: 20px;
@@ -62,7 +62,7 @@ footer {
   transform: translateY(50%);
   box-shadow: 5px 5px 5px 5px #00000031;
 }
-#divLogin a {
+.divLogin a {
   text-decoration: none;
   color: #0478d9;
 }
