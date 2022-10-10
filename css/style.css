@@ -24,6 +24,13 @@
 .barraNav a:hover{
     color: rgba(255, 255, 255, 0.849);
 }
+li .dropdown-item{
+    color:#0478D9
+}
+li .dropdown-item:hover{
+    background-color: white;
+    color: #0364b3;
+}
 /*navbar*/
 /*body*/
 body{
@@ -54,8 +61,14 @@ footer{
     background-color: white;
     margin-top: 200px;
 }
+#divLogin a{
+    text-decoration: none;
+    color: #0478D9;
+}
 .inputLogin{
     border-style: none none solid none;
+    border-color: gray;
+    border-width: 1px;
 }
 .inputLogin:focus{
     box-shadow: none;
