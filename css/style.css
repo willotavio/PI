@@ -1,130 +1,127 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*navbar*/
-.barraNav{
-    background-image: linear-gradient(to bottom, #0478D9, #4e9ddd);
-    color: white;
-    height: 50px;
-    font-size: 26px;
-    font-size: 16px;
+.barraNav {
+  background-image: linear-gradient(to bottom, #0478d9, #4e9ddd);
+  color: white;
+  height: 50px;
+  font-size: 26px;
+  font-size: 16px;
 }
-.barraNav li{
-    display: inline-block;
-    list-style: none;
+.barraNav li {
+  display: inline-block;
+  list-style: none;
 }
-.barraNav a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    padding: 2px;
+.barraNav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 2px;
 }
-.barraNav a:hover{
-    color: rgba(255, 255, 255, 0.849);
+.barraNav a:hover {
+  color: rgba(255, 255, 255, 0.849);
 }
-li .dropdown-item{
-    color:#0478D9
+li .dropdown-item {
+  color: #0478d9;
 }
-li .dropdown-item:hover{
-    background-color: white;
-    color: #0364b3;
+li .dropdown-item:hover {
+  background-color: white;
+  color: #0364b3;
 }
 /*navbar*/
 /*body*/
-body{
-    background-color: whitesmoke;
-    color: #0478D9;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  background-color: whitesmoke;
+  color: #0478d9;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*body*/
 /*footer*/
-footer{
-    background-image: linear-gradient(to bottom, #4e9ddd, #0478D9);
-    color: white;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+footer {
+  background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
+  color: white;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 /*footer*/
 /*login*/
-#divLogin{
-    border: #0478D9 solid 10px;
-    border-style: none none none solid;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 200px;
-    box-shadow: 5px 5px 5px 5px #00000031; 
+#divLogin {
+  border: #0478d9 solid 10px;
+  border-style: none none none solid;
+  border-radius: 20px;
+  background-color: white;
+  transform: translateY(50%);
+  box-shadow: 5px 5px 5px 5px #00000031;
 }
-#divLogin a{
-    text-decoration: none;
-    color: #0478D9;
+#divLogin a {
+  text-decoration: none;
+  color: #0478d9;
 }
-.inputLogin{
-    border-style: none none solid none;
-    border-color: gray;
-    border-width: 1px;
+.inputLogin {
+  border-style: none none solid none;
+  border-color: gray;
+  border-width: 1px;
 }
-.inputLogin:focus{
-    box-shadow: none;
-    outline: none;
+.inputLogin:focus {
+  box-shadow: none;
+  outline: none;
 }
-.divLogin select{
-    margin: 10px;
-    border: none;
-    color: #0478D9;
-    font-size: 16px;
+.divLogin select {
+  margin: 10px;
+  border: none;
+  color: #0478d9;
+  font-size: 16px;
 }
-.divLogin select:focus{
-    outline: none;
+.divLogin select:focus {
+  outline: none;
 }
 /*login*/
 /*cards home*/
-.cardsHome{
-    background-color: white;
-    width: 300px;
-    border: solid 3px #0478D9;
-    border-bottom: solid 10px #0478D9;
-    color: #0478D9;
-    border-radius: 10px;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 10px;
+.cardsHome {
+  background-color: white;
+  width: 300px;
+  border: solid 3px #0478d9;
+  border-bottom: solid 10px #0478d9;
+  color: #0478d9;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 /*cards home*/
 /*consulta alunos*/
-#botaoAdd{
-    margin-top: 50px;
-    border: solid 2px #0478D9;
-    border-radius: 10px;
+#botaoAdd {
+  margin-top: 50px;
+  border: solid 2px #0478d9;
+  border-radius: 10px;
 }
-#listaAlunos{
-    margin: auto;
-    text-align: center;
-    border: solid 1px #0478D9;
-    font-size: 18px;
-    padding: 1px;
-    margin-bottom: 20px;
+#listaAlunos {
+  margin: auto;
+  text-align: center;
+  border: solid 1px #0478d9;
+  font-size: 18px;
+  padding: 1px;
+  margin-bottom: 20px;
 }
-#listaAlunos td{
-    border: solid 1px #0478D9;
+#listaAlunos td {
+  border: solid 1px #0478d9;
 }
-#listaAlunos a{
-    color: rgb(0, 70, 70);
+#listaAlunos a {
+  color: rgb(0, 70, 70);
 }
 /*consulta alunos*/
 
 /*polos*/
-#divPolos{min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-  
-    display: flex;
-    align-items: center;
+#divPolos {
+  transform: translateY(50%);
 }
 /*polos*/

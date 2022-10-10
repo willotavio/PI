@@ -52,6 +52,47 @@
 </header>
 
 <body>
+  <!-- modal de cadastro do funcionario -->
+  <div class="modal fade" id="addAluno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="container" style="text-align:center">
+                <h5 class="modal-title" style="color: #0478D9;">Cadastrar um Aluno
+                </h5>
+            </div>
+        </div>
+        <div class="modal-body">
+            <form method="POST" action="../../crud/criarConta/controleConta.php" autocomplete="off"
+                enctype="multipart/form-data">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control inputGeral"
+                        placeholder="Nome do Aluno" required name="nome">
+                    <label class="labelCadastro">Nome do Aluno</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="email" class="form-control inputGeral"
+                        placeholder="Email" name='email' required>
+                    <label class="labelCadastro">Email</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="number" class="form-control inputGeral"
+                        placeholder="RA" name='ra' required>
+                    <label class="labelCadastro">RA</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-danger btn-lg btn-block"
+                        style="font-size:16px"
+                        onclick="window.location.href='funcionarios.php'">Voltar</button>
+                    <button type="submit" class="btn btn-outline-primary btn-lg btn-block"
+                        style="font-size:16px" value="cadastrar" name="botao">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal de cadastro do funcionario -->
   <div class="container" style="padding-top: 100px;padding-bottom: 50px; text-align:center">
 
     <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
