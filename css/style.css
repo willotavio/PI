@@ -5,7 +5,7 @@
 
 /*navbar*/
 .navbar {
-  background-image: linear-gradient(to bottom, #0478d9, #4e9ddd);
+  background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
   color: white;
   font-size: 26px;
   font-size: 16px;
@@ -30,10 +30,14 @@ li .dropdown-item:hover {
   background-color: white;
   color: #0364b3;
 }
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 /*navbar*/
 /*body*/
 body {
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
   color: #0478d9;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,7 +47,7 @@ body {
 footer {
   background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
   color: white;
-  height: 50px;
+  height: 65px;
   text-align: center;
   position: fixed;
   bottom: 0px;
@@ -89,17 +93,20 @@ footer {
 /*cards home*/
 .divHome{
   transform: translateY(50%);
+  background-color: white !important;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
 }
 .cardsHome {
-  background-color: white;
-  width: 300px;
-  border: solid 3px #0478d9;
-  border-bottom: solid 10px #0478d9;
-  color: #0478d9;
-  border-radius: 10px;
+  background-color: #4291d1;
+  width: 350px;
+  color: white;
   text-align: center;
   display: inline-block;
-  margin-bottom: 10px;
+}
+.cardsHome td{
+  color: white;
 }
 /*cards home*/
 /*consulta alunos*/
