@@ -4,24 +4,23 @@
 }
 
 /*navbar*/
-.barraNav {
+.navbar {
   background-image: linear-gradient(to bottom, #0478d9, #4e9ddd);
   color: white;
-  height: 50px;
   font-size: 26px;
   font-size: 16px;
 }
-.barraNav li {
+.navbar li {
   display: inline-block;
   list-style: none;
 }
-.barraNav a {
+.navbar a {
   text-decoration: none;
   color: white;
   margin: 10px;
   padding: 2px;
 }
-.barraNav a:hover {
+.navbar a:hover {
   color: rgba(255, 255, 255, 0.849);
 }
 li .dropdown-item {
@@ -59,7 +58,9 @@ footer {
   border-style: none none none solid;
   border-radius: 20px;
   background-color: white;
-  transform: translateY(50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   box-shadow: 5px 5px 5px 5px #00000031;
 }
 .divLogin a {
@@ -86,6 +87,9 @@ footer {
 }
 /*login*/
 /*cards home*/
+.divHome{
+  transform: translateY(50%);
+}
 .cardsHome {
   background-color: white;
   width: 300px;
@@ -122,6 +126,8 @@ footer {
 
 /*polos*/
 #divPolos {
-  transform: translateY(50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-70%);
 }
 /*polos*/
