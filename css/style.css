@@ -23,10 +23,10 @@
 .navbar a:hover {
   color: rgba(255, 255, 255, 0.849);
 }
-li .dropdown-item {
+.navbar li .dropdown-item {
   color: #0478d9;
 }
-li .dropdown-item:hover {
+.navbar li .dropdown-item:hover {
   background-color: white;
   color: #0364b3;
 }
@@ -136,6 +136,8 @@ footer {
 
 /*polos*/
 #divPolos {
+  margin: auto;
+  width: 70%;
   position: relative;
   top: 50%;
   transform: translateY(-70%);
