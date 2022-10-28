@@ -4,7 +4,7 @@ function colormode(toggle) {
 };
 
 var toggled = true;
-const switcher = document.querySelector('.trocaCor');
+const switcher = document.querySelector('.trocaTema');
 switcher.addEventListener('click',function() {
    colormode(toggled);
    toggled = !toggled;
