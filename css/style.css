@@ -4,8 +4,8 @@
 }
 
 /*navbar*/
-.navbar {
-  background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
+nav{
+  background-color: #0478d9;
   color: white;
   font-size: 26px;
   font-size: 16px;
@@ -36,16 +36,15 @@
 }
 /*navbar*/
 /*body*/
-body {
-  background-color: whitesmoke !important;
-  color: #0478d9;
+body{
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /*body*/
 /*footer*/
 footer {
-  background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
+  background-color: #0478d9;
   color: white;
   height: 70px;
   text-align: center;
