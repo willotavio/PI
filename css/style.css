@@ -47,13 +47,23 @@ body {
 footer {
   background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
   color: white;
-  height: 65px;
+  height: 70px;
   text-align: center;
   position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+}
+#logoFooter{
+  float: right;
+  margin-top: 1.2%;
+  margin-right: 2px;
+}
+#textoFooter{
+  float: left;
+  margin-top: 0.7%;
+  margin-left: 2px;
 }
 /*footer*/
 /*login*/
