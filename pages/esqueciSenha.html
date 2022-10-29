@@ -20,8 +20,15 @@
       <form action="">
         <p><label for="usuario">Email:</label><br>
           <input class="inputLogin" type="text" name="emailRecuperacao" id="emailRecuperacao" required autocomplete="off"></p>
-        <p><button type="submit" class="btn btn-outline-primary mb-3">Entrar</button></p>
+        <p><button onclick="recSenha()" type="submit" class="btn btn-outline-primary mb-3">Enviar</button></p>
       </form>
     </div>
   </body>
+
+<script>
+  function recSenha(){
+    alert("Foi enviado um link para recuperação de senha ao seu email")
+  }
+</script>
+
 </html>

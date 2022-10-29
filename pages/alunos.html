@@ -74,15 +74,25 @@
                         placeholder="Nome do Aluno" required name="nome">
                     <label class="labelCadastro">Nome do Aluno</label>
                 </div>
+                <div class="form-floating mb-3 mt-3">
+                  <input type="text" class="form-control inputGeral"
+                      placeholder="CPF" required name="cpf">
+                  <label class="labelCadastro">CPF</label>
+                </div>
                 <div class="form-floating mt-3 mb-3">
                     <input type="email" class="form-control inputGeral"
                         placeholder="Email" name='email' required>
                     <label class="labelCadastro">Email</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
+                  <input type="text" class="form-control inputGeral"
+                      placeholder="Telefone" name='telefone' required>
+                  <label class="labelCadastro">Telefone</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
                     <input type="number" class="form-control inputGeral"
-                        placeholder="RA" name='ra' required>
-                    <label class="labelCadastro">RA</label>
+                        placeholder="UC" name='uc' required>
+                    <label class="labelCadastro">UC</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
                   <input type="date" class="form-control inputGeral"
@@ -122,6 +132,11 @@
                     <label class="labelCadastro">Nome do Aluno</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
+                  <input type="date" class="form-control inputGeral"
+                      placeholder="Data" name='data' required>
+                  <label class="labelCadastro">Data</label>
+              </div>
+                <div class="form-floating mt-3 mb-3">
                     <input type="date" class="form-control inputGeral"
                         placeholder="Vencimento" name='vecimento' required>
                     <label class="labelCadastro">Vencimento</label>
@@ -131,6 +146,11 @@
                         placeholder="Valor" name='valor' required>
                     <label class="labelCadastro">Valor</label>
                 </div>
+                <div class="form-floating mt-3 mb-3">
+                  <input type="number" class="form-control inputGeral"
+                      placeholder="Desconto" name='desconto' required>
+                  <label class="labelCadastro">Desconto</label>
+              </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-outline-danger btn-lg btn-block"
                         style="font-size:16px"
@@ -158,15 +178,19 @@
           <table class="table light" style="color:#0478D9">
             <thead style="text-align: center;">
               <th scope="col" style='text-align:center'>Nome</th>
+              <th scope="col" style='text-align:center'>CPF</th>
               <th scope="col" style='text-align:center'>E-Mail</th>
-              <th scope="col" style='text-align:center'>RA</th>
+              <th scope="col" style='text-align:center'>Telefone</th>
+              <th scope="col" style='text-align:center'>UC</th>
               <th scope="col" style='text-align:center'>Data de Nascimento</th>
               <th scope="col">Ações</th>
             </thead>
             <tbody style="text-align: center;">
               <tr>
                 <td><span>Jorge</span></td>
+                <td><span>99999999999</span></td>
                 <td><span>joorgee@gmail.com</span></td>
+                <td><span>11940028922</span></td>
                 <td><span>099939291</span></td>
                 <td><span>09/09/1909</span></td>
                 <td>
@@ -202,8 +226,7 @@
 </body>
 
 <footer class="light">
-  <span id="textoFooter">GCEAD<br>2022</span>
-  <img id="logoFooter" src="../imgs/logo/debughop.png" alt="debughop" width="7%">
+  <img id="logoFooter" src="../imgs/logo/debughop.png" alt="debughop" width=100rem">
 </footer>
 
 <script src="../js/trocaTema.js"></script>
