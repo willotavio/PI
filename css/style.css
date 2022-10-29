@@ -2,6 +2,41 @@
   padding: 0;
   margin: 0;
 }
+:root{
+    /*light*/
+    --fundoPrincipal: whitesmoke;
+    --fontePrincipal: rgb(61, 61, 61);
+    /*light*/
+
+    /*dark*/
+    --fundoDark: rgb(61, 61, 61);
+    --fundoDarkHover: rgb(90, 90, 90);
+    --fontDark: rgb(201, 201, 201);
+    /*dark*/
+}
+
+/*dark*/
+table.dark{
+  color: var(--fontDark) !important;
+}
+/*dark*/
+
+/*body*/
+body{
+  background: var(--fundoPrincipal);
+  color: var(--fontePrincipal);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body.dark{
+  background: var(--fundoDark);
+  color: var(--fontDark);
+}
+
+table{
+  color:#0478d9;
+}
+/*body*/
 
 /*navbar*/
 nav{
@@ -9,6 +44,10 @@ nav{
   color: white;
   font-size: 26px;
   font-size: 16px;
+}
+nav.dark{
+  background: black;
+  color: var(--fontDark);
 }
 .navbar li {
   display: inline-block;
@@ -46,13 +85,7 @@ nav{
   margin-top: 10px;
 }
 /*navbar*/
-/*body*/
-body{
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-/*body*/
 /*footer*/
 footer {
   background-color: #0478d9;
@@ -64,6 +97,10 @@ footer {
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+}
+footer.dark{
+  background: black;
+  color: var(--fontDark);
 }
 #logoFooter{
   float: right;
@@ -118,6 +155,16 @@ footer {
   border-radius: 10px;
   width: 90%;
   margin: auto;
+}
+@media screen and (max-width: 600px){
+  .divHome  
+  {
+    min-width: 100%;
+  }
+  #divPolos
+  {
+    min-width: 100%;
+  }
 }
 .cardsHome {
   background-color: #4291d1;
