@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Alunos</title>
+    <title>Alunos Av. Paulista</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../imgs/favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -94,11 +94,6 @@
                         placeholder="UC" name='uc' required>
                     <label class="labelCadastro">UC</label>
                 </div>
-                <div class="form-floating mt-3 mb-3">
-                  <input type="date" class="form-control inputGeral"
-                      placeholder="Data de Nascimento" name='dataNascimento' required>
-                  <label class="labelCadastro">Data de Nascimento</label>
-                </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-outline-danger btn-lg btn-block"
                         style="font-size:16px"
@@ -171,6 +166,13 @@
     data-bs-target="#addAluno" style="font-size: 1.0em; width: 200px;">Adicionar Aluno<br>
     <img src="../imgs/alunos/addAlunoIcon.png" alt="add aluno" width="50px">
     </button>
+    
+    <form class="d-flex inputPesquisa" role="search">
+      <input class="form-control me-2 barraPesquisa light" type="search" placeholder="Quem você procura?" aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></button>
+    </form>
 
     <div class="overflow-auto">
       <div class="column">  
@@ -182,7 +184,6 @@
               <th scope="col" style='text-align:center'>E-Mail</th>
               <th scope="col" style='text-align:center'>Telefone</th>
               <th scope="col" style='text-align:center'>UC</th>
-              <th scope="col" style='text-align:center'>Data de Nascimento</th>
               <th scope="col">Ações</th>
             </thead>
             <tbody style="text-align: center;">
@@ -192,7 +193,6 @@
                 <td><span>joorgee@gmail.com</span></td>
                 <td><span>11940028922</span></td>
                 <td><span>099939291</span></td>
-                <td><span>09/09/1909</span></td>
                 <td>
                   <button class='btn btn-sm btn-outline-warning addBoleto' value="<?php echo $row['id_aluno']; ?>" data-bs-toggle="modal" data-bs-target="#addBoleto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus" viewBox="0 0 16 16">

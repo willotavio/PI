@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Funcionários</title>
+    <title>Funcionários Av. Paulista</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../imgs/favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -79,6 +79,11 @@
                     <label class="labelCadastro">Digite o Email</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
+                  <input type="date" class="form-control inputGeral"
+                      placeholder="Data de Nascimento" name='dataNascimento' required>
+                  <label class="labelCadastro">Data de Nascimento</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
                     <input type="password" class="form-control inputGeral"
                         placeholder="Digite a sua Senha" name='senha' required>
                     <label class="labelCadastro">Digite a Senha</label>
@@ -121,20 +126,31 @@
     <img src="../imgs/alunos/addAlunoIcon.png" alt="add aluno" width="50px">
     </button>
 
+    <form class="d-flex inputPesquisa" role="search">
+      <input class="form-control me-2 barraPesquisa light" type="search" placeholder="Quem você procura?" aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></button>
+    </form>
+
     <div class="overflow-auto">
       <div class="column">  
         <div class="m-2 ">
           <table class="table light" style="color:#0478D9">
             <thead style="text-align: center;">
               <th scope="col" style='text-align:center'>Nome</th>
+              <th scope="col" style='text-align:center'>Email</th>
               <th scope="col" style='text-align:center'>Cargo</th>
+              <th scope="col" style='text-align:center'>Código Funcionário</th>
               <th scope="col" style='text-align:center'>Data de Nascimento</th>
               <th scope="col">Ações</th>
             </thead>
             <tbody style="text-align: center;">
               <tr>
                 <td><span>Marta</span></td> 
+                <td><span>martaa012@gmail.com</span></td>
                 <td><span>Funcionário</span></td>
+                <td><span>01</span></td>
                 <td><span>08/08/1808</span></td>
                 <td>
                   <button class='btn btn-sm btn-outline-primary editAluno' value="<?php echo $row['id_aluno']; ?>">
