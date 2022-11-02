@@ -159,10 +159,6 @@ footer.dark{
   {
     min-width: 100%;
   }
-  #divPolos
-  {
-    min-width: 100%;
-  }
 }
 .cardsHome {
   background-color: #4291d1;
@@ -203,14 +199,67 @@ footer.dark{
 /*polos*/
 #divPolos {
   margin: auto;
-  width: 70%;
+  width: 50rem;
   position: relative;
   top: 50%;
   transform: translateY(-70%);
 }
+.cardsPolo{
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 901px){
+  #divPolos .colunaPolos{
+    min-width: 50rem
+  }
+}
+@media (max-width: 900px){
+  #divPolos{
+    max-width: 100%;
+  }
+  #divPolos .colunaPolos{
+    display: block;
+    margin: auto;
+  }
+  .cardsPolo{
+    width: 7rem;
+    text-align: center;
+    margin: auto;
+  }
+  .cardsPolo .btnAddPolo{
+    height: 7rem;
+  }
+}
 .cardsPolo.dark{
   background: gray;
   color: whitesmoke;
+}
+.colunaPolos{
+  padding-left: 10px; 
+  padding-right: 10px;
+  max-width: 20rem;
+}
+.btnAddPolo{
+  height: 20rem;
+  background: url("../imgs/polos/addPolo.svg") no-repeat;
+  background-size: cover;
+}
+.btnAddPolo:hover{
+  filter: brightness(90%);
+}
+.btnAddPolo.dark{
+  background: url("../imgs/polos/addPolo.svg") no-repeat;
+  filter: grayscale(100%);
+}
+.btnAddPolo.dark:hover{
+  filter: grayscale(90%);
+}
+.textoPolo{
+  float: left;
+}
+.deletarPolo{
+  float: right;
 }
 /*polos*/
 

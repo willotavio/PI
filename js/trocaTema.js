@@ -1,14 +1,13 @@
 const trocaTema = document.querySelector(".trocaTema");
 
 var light = document.getElementsByClassName('light');
-const currentSwitch = localStorage.getItem("switch");
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
     for( var i = 0; i < light.length; i++){
     document.getElementsByClassName('light')[i].classList.add("dark");
-    trocaTema.setAttribute('checked','');
     }
+    trocaTema.setAttribute('checked','');
   }
 
 trocaTema.addEventListener("click", function(){
@@ -30,5 +29,4 @@ trocaTema.addEventListener("click", function(){
 
 }
   localStorage.setItem("theme", theme);
-  localStorage.setItem("trocaTema", trocaTema);
 })
