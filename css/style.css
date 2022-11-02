@@ -206,6 +206,19 @@ footer.dark{
 #listaAlunos a {
   color: rgb(0, 70, 70);
 }
+
+.inputPesquisa{
+  padding: 2rem;
+}
+.barraPesquisa{
+  background: white;
+}
+.barraPesquisa.dark{
+  background: black;
+}
+.barraPesquisa.dark:focus{
+  background: black;
+}
 /*consulta alunos*/
 
 /*polos*/
@@ -275,16 +288,30 @@ footer.dark{
 }
 /*polos*/
 
-.inputPesquisa{
-  padding: 2rem;
+/*ver perfil*/
+.infosPerfil .imgPerfil{
+  border: 2px solid #0478d9;
+  border-radius: 50%;
+  margin-bottom: 2rem;
 }
-.barraPesquisa{
-  background: white;
+.infosPerfil{
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 20rem;
 }
-.barraPesquisa.dark{
+.infosFuncionario{
+  text-align: center;
+}
+.historicoPerfil{
+  padding-top: 5rem;
+  text-align: center;
+  max-width: 30rem;
+}
+.historicoFuncionario{
+  text-align: center;
+}
+.inputPerfilFuncionario.dark{
   background: black;
+  color: grey;
 }
-
-.barraPesquisa.dark:focus{
-  background: black;
-}
+/*ver perfil*/
