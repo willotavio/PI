@@ -1,12 +1,13 @@
 const trocaTema = document.querySelector(".trocaTema");
 
 var light = document.getElementsByClassName('light');
-
+const currentSwitch = localStorage.getItem("switch");
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
     for( var i = 0; i < light.length; i++){
     document.getElementsByClassName('light')[i].classList.add("dark");
+    trocaTema.setAttribute('checked','');
     }
   }
 
@@ -16,15 +17,18 @@ trocaTema.addEventListener("click", function(){
     }
     var className = document.body.className;
     if(className == "light") {
-        this.textContent = "Light";
+        console.log('Light');
     }
     else {
-        this.textContent = "Dark";
+        console.log('Dark');
     }
 
-    let theme = "light";
+  let theme = "light";
   if (document.body.classList.contains("dark")) {
     theme = "dark";
+    trocaTema.setAttribute('checked','');
+
 }
   localStorage.setItem("theme", theme);
+  localStorage.setItem("trocaTema", trocaTema);
 })

@@ -84,6 +84,9 @@ nav.dark{
 .navbar ul li .trocaTema{
   margin-top: 10px;
 }
+.navbar ul li .trocaTema.dark{
+  
+}
 /*navbar*/
 
 /*footer*/
