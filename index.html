@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col">
                 <h1>Login</h1><br>
-                <form action="pages/polos/polos.html" method="POST">
+                <form method="POST" name="formLoginUsuario">
                     <p><label for="usuario">Usuário:</label><br>
                     <input class="inputLogin" type="text" name="usuario" id="usuario" required autocomplete="off"></p>
                         
@@ -39,7 +39,7 @@
                     <input class="inputLogin" type="password" name="senha" id="senha" required autocomplete="off">
                     </p>
                         
-                    <p><button type="submit" class="btn btn-outline-primary mb-3">Entrar</button></p>
+                    <p><button type="reset" class="btn btn-outline-primary mb-3 botaoLogin" onclick="loginUsuario()">Entrar</button></p>
                 </form>
                 <a href="pages/esqueciSenha/esqueciSenha.html">Esqueci minha senha</a>
             </div>
@@ -56,4 +56,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+<script src="js/login.js"></script>
 </html>
