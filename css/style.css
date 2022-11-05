@@ -97,7 +97,7 @@ nav.dark{
   margin-top: 10px;
 }
 .navbar ul li .trocaTema.dark{
-  
+  filter: grayscale(150%)
 }
 /*navbar*/
 
