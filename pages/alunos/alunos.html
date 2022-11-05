@@ -85,14 +85,29 @@
                     <label class="labelCadastro">Email</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
+                  <input type="email" class="form-control inputGeral"
+                      placeholder="Email Institucional" name='emailInstitucional' required>
+                  <label class="labelCadastro">Email Institucional</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                  <input type="number" class="form-control inputGeral"
+                      placeholder="UC" name='uc' required>
+                  <label class="labelCadastro">UC</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
                   <input type="text" class="form-control inputGeral"
                       placeholder="Telefone" name='telefone' required>
                   <label class="labelCadastro">Telefone</label>
                 </div>
                 <div class="form-floating mt-3 mb-3">
-                    <input type="number" class="form-control inputGeral"
-                        placeholder="UC" name='uc' required>
-                    <label class="labelCadastro">UC</label>
+                    <input type="text" class="form-control inputGeral"
+                        placeholder="Curso" name='curso' required>
+                    <label class="labelCadastro">Curso</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control inputGeral"
+                        placeholder="Mensalidade" name='mensalidade' required>
+                    <label class="labelCadastro">Mensalidade</label>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-outline-danger btn-lg btn-block"
@@ -121,11 +136,6 @@
         <div class="modal-body">
             <form method="POST" action="" autocomplete="off"
                 enctype="multipart/form-data">
-                <div class="form-floating mb-3 mt-3">
-                    <input type="text" class="form-control inputGeral"
-                        placeholder="Nome do Aluno" required name="nome">
-                    <label class="labelCadastro">Nome do Aluno</label>
-                </div>
                 <div class="form-floating mt-3 mb-3">
                   <input type="date" class="form-control inputGeral"
                       placeholder="Data" name='data' required>
@@ -145,6 +155,10 @@
                   <input type="number" class="form-control inputGeral"
                       placeholder="Desconto" name='desconto' required>
                   <label class="labelCadastro">Desconto</label>
+              </div>
+              <div class="mt-3 mb-3">
+                  <label for="arquivo" class="form-control" id="labelArquivo">Adicionar arquivo do boleto</label>
+                  <input type="file" class="form-control" name="foto" id="arquivo">
               </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-outline-danger btn-lg btn-block"
