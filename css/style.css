@@ -40,6 +40,7 @@ body{
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 body.dark{
   background: var(--fundoDark);
@@ -52,6 +53,12 @@ table{
 /*body*/
 
 /*navbar*/
+header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  }
 nav{
   background-image: linear-gradient(to bottom, #4e9ddd, #0478d9);
   color: white;
@@ -111,6 +118,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 1000;
 }
 footer.dark{
   background: black;
