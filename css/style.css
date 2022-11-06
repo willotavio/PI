@@ -39,6 +39,7 @@ body{
   color: var(--fontePrincipal);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 2rem;
 }
 body.dark{
   background: var(--fundoDark);
@@ -108,10 +109,8 @@ footer {
   height: 70px;
   text-align: center;
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
+  width: 100%;
+  bottom: 0;
 }
 footer.dark{
   background: black;
@@ -313,5 +312,8 @@ footer.dark{
 .inputPerfilFuncionario.dark{
   background: black;
   color: grey;
+}
+.divPerfil{
+  padding-bottom: 10rem;
 }
 /*ver perfil*/
