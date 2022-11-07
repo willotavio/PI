@@ -8,7 +8,7 @@ function loginUsuario(){
     if (nomeUsuario == "" || senhaUsuario == ""){
         window.alert('Preencha os campos por gentileza');
     }
-    else if (nomeUsuario != "bigchungus" || senhaUsuario != "wow"){
+    else if (nomeUsuario != "admin" || senhaUsuario != "123"){
         window.alert('Credenciais incorretas');
     }
     else{
